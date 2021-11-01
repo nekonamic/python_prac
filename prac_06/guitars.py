@@ -14,4 +14,4 @@ while True:
     count += 1
 print("These are my guitars:")
 for index in range(0, count):
-    print(f"Guitar {index}: {guitar_list.__str__()}")
+    print(f"Guitar {index + 1}: {guitar_list[index].__str__()}")
