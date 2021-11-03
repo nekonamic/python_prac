@@ -1,6 +1,6 @@
 from kivy.app import App
 from kivy.lang import Builder
-from kivy.uix.button import Button
+from kivy.uix.label import Label
 
 
 class DynamicLabel(App):
@@ -16,8 +16,8 @@ class DynamicLabel(App):
 
     def create_widgets(self):
         for name in self.list_of_name:
-            temp_button = Button(text=name)
-            self.root.ids.entries_box.add_widget(temp_button)
+            temp_label = Label(text=name)
+            self.root.ids.entries_box.add_widget(temp_label)
 
     def clear_all(self):
         self.root.ids.entries_box.clear_widgets()
